@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Página de Registro</title>
+</head>
+<body style="background-color: black" >
+  <!-- COMIENZO DE LA CABECERA -->  
+  <header id="cabecera">
+    <!-- BARRA DE NAVEGACIÓN FIJA -->
+    
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgba(0, 0, 0, 0.26);" id="barra">
+      <a href="index.html"><img src="../imagenes/gol-icon.png" alt="Tu escuela de fútbol más cerca" width="110" height="110"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Accede <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#queesfootmin">¿Qué es Footmin?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Consulta</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
+    <!-- FIN BARRA DE NAVEGACIÓN FIJA -->
+
+  </header>
+   <!-- FIN DE LA CABECERA --> 
+
+  <!-- FORMULARIO DE REGISTRO -->
+  <section id="cuerpo" class="vh-100">
+    <div class="container" id="formulario">
+        <div class="row pt-4">
+            <div class="col-sm-12">
+                <div class="well well-sm">
+                    <form class="form-horizontal" method="post" action="inicioLogueado.html">
+                        <fieldset>
+                            <legend class="header text-light">Formulario de Registro</legend>
+    
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center">Nombre</span>
+                                <div class="col-md-8">
+                                    <input id="nombre" name="nombre" type="text" placeholder="Nombre" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center ">Apellidos</span>
+                                <div class="col-md-8">
+                                    <input id="apellido" name="apellido" type="text" placeholder="Apellidos" class="form-control">
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center">DNI</span>
+                                <div class="col-md-8">
+                                    <input id="dni" name="dni" type="text" placeholder="DNI" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center">E-mail</span>
+                                <div class="col-md-8">
+                                    <input id="email" name="email" type="email" placeholder="E-mail" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center">Contraseña</span>
+                                <div class="col-md-8">
+                                    <input id="pass" name="pass" type="password" placeholder="Contraseña" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center">Código de Club</span>
+                                <div class="col-md-8">
+                                    <input id="codigo" name="codigo" type="text" placeholder="Código de Club" class="form-control">
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <div class="col-md-8 text-center">
+                                    <button type="submit" class="btn btn-sm btn-block text-light" style="background-color: rgb(12, 34, 12);">Registrar</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- FIN FORMULARIO DE REGISTRO -->
+
+  <!-- FOOTER -->
+  <footer class="pt-4 border-top bg-dark text-center text-light">
+    <div class="row" style="width: 100%;">
+
+      <div class="col-6 col-sm ">
+        <h5>Asistencia</h5>
+        <ul class="list-unstyled text-small ">
+          <li><a class="text-muted" href="#">Ayuda y Servicio al Cliente</a></li>
+          <li><a class="text-muted" href="#">Aviso de Privacidad</a></li>
+          <li><a class="text-muted" href="#">Terminos de Uso</a></li>
+          <li><a class="text-muted" href="#">Comentarios sobre la Web</a></li>
+          <li><a class="text-muted" href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm ">
+        <h5>Patrocinadores</h5>
+        <ul class="list-unstyled text-small ml-3">
+          <li><a class="text-muted" href="https://www.adidas.es" target="_blank"><img src="../imagenes/patrocinador1.png"  alt="" width="74" height="74"></a></li>
+          <li><a class="text-muted" href="https://www.nike.com" target="_blank"><img src="../imagenes/patrocinador2.png" alt="" width="64" height="44"></a></li>
+          <li class="mt-1"><a class="text-muted" href="https://www.lucasfilm.com/" target="_blank"><img src="../imagenes/patrocinador3.png" alt="" width="85" height="44"></a></li>
+          <li class="mt-2"><a class="text-muted" href="https://www.burgerking.es/" target="_blank"><img src="../imagenes/patrocinador4.png" alt="" width="64" height="64"></a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm ">
+        <h5>Síguenos</h5>
+        <ul class="list-unstyled ml-3">
+          <li>
+            <a href="https://www.twitter.com" target="_blank" class="badge social twitter ">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank" class="badge social facebook ">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+          </li>
+          <li> 
+            <a href="https://www.instagram.com" target="_blank" class="badge social instagram ">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm mt-5 py-1 border-top text-center">
+      <a href="index.html"><img class="mb-2" src="imagenes/gol-icon.png" alt="" width="64" height="64"></a>
+      <small class="d-block mb-3 text-muted">&copy; 2019-2020</small>
+    </div>
+
+  </footer>
+  <!-- FIN FOOTER -->
+
+  <!-- HIDDEN LOGIN MODAL -->
+  <div class="modal fade" id="modalLogin">
+    <!-- este id será el que indicaremos en el enlace de login-->
+    <div class="modal-dialog modal-sm ">
+        <div class="modal-content text-light" style="background-color: black;">
+            <div class="modal-header">
+                <a href="" class="btn btn-primary btn-lg btn-block" role="button">
+                    <i class="fab fa-facebook-square"> Inicia sesión con Facebook</i>
+                </a>
+            </div> <!-- .modal-header -->
+            <div class="modal-body">
+                <p class="text-center">----------  o  ----------</p>
+                <!-- para incluir este formulario puedes ver las clases necesarios en el apartado css de bootstrap -->
+                <form action="inicioLogueado.html">
+                    <div class="form-group">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Escribe tu email...">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword"
+                            placeholder="Escribe tu contraseña...">
+                    </div>
+                    <button type="submit" class="btn btn-outline-success btn-block" >Iniciar sesión</button>
+                </form>
+
+            </div> <!-- .modal-body -->
+
+            <div class="modal-footer">
+                <p><a href="">¿Has olvidado la contraseña?</a></p>
+            </div> <!-- .modal-footer -->
+
+        </div> <!-- .modal-content -->
+    </div> <!-- .modal-dialog -->
+
+</div> <!-- .modal-fade -->
+<!-- END HIDDEN LOGIN MODAL -->
+
+    <script src="../bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

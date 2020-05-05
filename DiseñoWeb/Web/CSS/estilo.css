@@ -1,0 +1,111 @@
+@media screen and (min-width: 529px) {
+#barra{
+    width: 100%;
+}
+
+
+#cuerpo{
+    background-image: url("../imagenes/escuela-futbol.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#tit{
+    display: flex;
+    align-items: center;
+}
+
+#ti{
+    font-family: 'Bangers', cursive;
+    font-size: 350%;
+}
+
+#tib{
+    font-family: 'Bangers', cursive;
+    font-size: 200%;
+}
+
+legend{
+    font-family: 'Bangers', cursive;
+}
+
+fieldset span{
+    color: white;
+    font-family: 'Bangers', cursive;
+}
+
+#nombre, #apellido, #dni, #email, #pass, #codigo{
+    border: solid 3px;
+    border-color: green;
+    background-color: rgba(240, 255, 240, 0.527);
+}
+
+.carrusel{
+    font-family: 'Bangers', cursive; 
+}
+
+#ct{
+    font-family: 'Bangers', cursive;
+}
+
+}
+
+
+@media screen and (max-width: 528px) {
+    #barra{
+        width: 100%;
+    }
+    
+    
+    #cuerpo{
+        background-image: url("../imagenes/escuela-futbol.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    
+    #tit{
+        display: flex;
+        align-items: center;
+    }
+    
+    #ti{
+        font-family: 'Bangers', cursive;
+        font-size: 350%;
+    }
+    
+    #tib{
+        font-family: 'Bangers', cursive;
+        font-size: 200%;
+    }
+    
+    legend{
+        font-family: 'Bangers', cursive;
+    }
+    
+    fieldset span{
+        color: white;
+        font-family: 'Bangers', cursive;
+    }
+    
+    #nombre, #apellido, #dni, #email, #pass, #codigo{
+        border: solid 3px;
+        border-color: green;
+        background-color: rgba(240, 255, 240, 0.527);
+    }
+    
+    .carrusel{
+        font-family: 'Bangers', cursive; 
+    }
+    
+    #ct{
+        font-family: 'Bangers', cursive;
+    }
+
+    #imag{
+        width: 80%;
+    }
+
+}
+
