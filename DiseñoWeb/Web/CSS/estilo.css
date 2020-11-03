@@ -26,7 +26,7 @@
     font-size: 200%;
 }
 
-legend{
+legend, h3{
     font-family: 'Bangers', cursive;
 }
 
@@ -35,7 +35,7 @@ fieldset span{
     font-family: 'Bangers', cursive;
 }
 
-#nombre, #apellido, #dni, #email, #pass, #codigo{
+#nombre, #apellido, #dni, #email, #pass, #codigo, #nacimiento{
     border: solid 3px;
     border-color: green;
     background-color: rgba(240, 255, 240, 0.527);
@@ -80,7 +80,7 @@ fieldset span{
         font-size: 200%;
     }
     
-    legend{
+    legend, h3{
         font-family: 'Bangers', cursive;
     }
     
@@ -89,7 +89,7 @@ fieldset span{
         font-family: 'Bangers', cursive;
     }
     
-    #nombre, #apellido, #dni, #email, #pass, #codigo{
+    #nombre, #apellido, #dni, #email, #pass, #codigo, #nacimiento{
         border: solid 3px;
         border-color: green;
         background-color: rgba(240, 255, 240, 0.527);
