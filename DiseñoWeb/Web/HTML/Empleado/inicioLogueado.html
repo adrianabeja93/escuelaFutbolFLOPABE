@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../CSS/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    
+
+
+    
+    <title>Inicio</title>
+</head>
+<body style="background-color: rgb(12, 34, 12);" >
+     <!-- COMIENZO DE LA CABECERA -->  
+     <header id="cabecera">
+      <!-- BARRA DE NAVEGACIÓN FIJA -->
+      
+      <nav class="navbar navbar-expand-md navbar-dark" style="background-color: black;" id="barra">
+        <a href="inicioLogueado.html"><img src="../../imagenes/gol-icon.png" alt="Tu escuela de fútbol más cerca" width="110" height="110"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link active" href="inicioLogueado.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="misJugadores.html">Mi equipo</a>
+            </li>
+  
+            
+              <div class="btn-group">
+                <a  class="nav-link pr-0" href="entrenamientos.html">Entrenamientos</a>
+                <!-- PARA QUE EL APARTADO ENTRENAMIENTO SEA TAMBIÉN SELECCIONABLE AUNQUE TENGA SUBMENÚ COGI EL APARTADO DE BOOTSTRAP DEL MENU SELECCIONABLE CON BOTÓN Y MODIFIQUE LOS BUTTON POR A -->
+                <a  class="nav-link dropdown-toggle pl-0" id="entrenamientosDesplega" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                  
+                </a>
+                <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.336);" aria-labelledby="entrenamientosDesplega">
+                  <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="horariosEntrenamiento.html">Horarios</a>
+                  <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="asistencia.html">Asistencia</a>
+                </div>
+              </div>
+           
+  
+              <div class="btn-group">
+                <a  class="nav-link pr-0" href="partidos.html">Partidos</a>
+                <a  class="nav-link dropdown-toggle pl-0" id="partidosDesplega" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                  
+                </a>
+                <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.336);" aria-labelledby="partidosDesplega">
+                  <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="horariosConvocatorias.html">Horarios y Convocatorias</a>
+                  <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href=resultados.html>Resultados</a>
+                  <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="clasificaciones.html">Clasificación</a>
+                  <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="estadisticas.html">Estadísticas</a>
+                </div>
+                </div>
+  
+                <div class="btn-group">
+                  <a  class="nav-link pr-0" href="#">Adrián López</a>
+                  <a  class="nav-link dropdown-toggle pl-0" id="usuarioDesplega" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                    
+                  </a>
+                  <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.336);" aria-labelledby="usuarioDesplega">
+                      <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="configuracion.html">Configuración</a>
+                      <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="index.html">Cerrar sesión</a>
+                  </div>
+                  </div>
+  
+          </ul>
+        </div>
+      </nav>
+      <!-- FIN BARRA DE NAVEGACIÓN FIJA -->
+  
+    </header>
+     <!-- FIN DE LA CABECERA --> 
+
+
+    <div class="col-md-12 text-center my-5" >
+      <h2 class="text-light" id="ti">Escuela Deportiva Covadonga</h2>
+    </div>
+
+    <!-- DESCRIPCIÓN DE LA ESCUELA -->
+    <div class="col-md-5 offset-md-1 lead my-3">
+        <h3 id="tib" class="text-light">Descripción de la Escuela</h3>
+        <p class="text-light">Escuela de Fútbol Centro Municipal de Deportes Covadonga
+           imparte sus actividades en el Polideportivo Municipal de Covadonga.
+            Los niños pueden empezar a jugar al fútbol desde muy jóvenes en esta escuela.</p>
+    </div>
+
+    <!-- DATOS DEL CLUB -->
+    <div class="col-md-5 offset-md-6 my-3" style="border: groove 5px black; border-radius: 10px; background-color: rgba(240, 255, 240, 0.527);">
+        <p class="text-light" id="tib">Datos de la Escuela</p>
+        <div class="form-group row lead">
+          <p class="ml-3">Estadio:</p>
+          <p class="ml-2" >Centro Municipal De Deportes Covadonga</p>
+        </div>
+        <div class="form-group row lead">
+          <p class="ml-3">Año fundación:</p>
+          <p class="ml-2" >2000</p>
+        </div>
+        <div class="form-group row lead">
+          <p class="ml-3">Nº Alumnos:</p>
+          <p class="ml-2" >156</p>
+        </div>
+        <div class="form-group row lead">
+          <p class="ml-3">Nº Equipos:</p>
+          <p class="ml-2">13</p>
+        </div>
+        <div class="form-group row lead">
+          <p class="ml-3">Dirección:</p>
+          <div class="ml-2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d792.6802812549836!2d-6.038987570751526!3d37.372775064519786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126cee78d0e403%3A0x107f59ba6eef3102!2sCalle%20Juan%20Rodriguez%20Garc%C3%ADa%2C%2056%2C%2041940%20Tomares%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1588954466852!5m2!1ses!2ses"
+            width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+  </div>
+
+    <!-- COMIENZO DE LA GRAFICA -->
+    
+    <div class="col-md-5 offset-md-1 mt-3 mb-5">
+      <figure class="highcharts-figure">
+        <div id="container" ></div>
+        <p class="highcharts-description text-light lead">
+          Gráfica con el número de alumnos de la escuela divididos en categorias.
+        </p>
+      </figure>
+    </div>
+
+    <!-- GRAFICO -->
+      <script>
+        // Create the chart
+        Highcharts.chart('container', {
+          chart: {
+                backgroundColor: {
+                    linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
+                    stops: [
+                        [0, '#020000'],
+                        [1, '#020000']
+                    ]
+                },
+          
+            type: 'column'
+          },
+          title: {
+            text: '<p style="color:white">Datos Pertenecientes a la Temporada 2019/2020</p>'
+          },
+          accessibility: {
+            announceNewData: {
+              enabled: true
+            }
+          },
+          xAxis: {
+            type: 'category'
+          },
+          yAxis: {
+            title: {
+              text: 'Número de alumnos'
+            }
+
+          },
+          legend: {
+            enabled: false
+          },
+          plotOptions: {
+            series: {
+              borderWidth: 0,
+              dataLabels: {
+                enabled: true,
+              }
+            }
+          },
+
+          series: [
+            {
+              name: "Alumnos",
+              colorByPoint: true,
+              data: [
+                {
+                  name: "Chupetín",
+                  y: 21,
+                },
+                {
+                  name: "Prebenjamín",
+                  y: 27,
+                },
+                {
+                  name: "Benjamín",
+                  y: 22,
+                },
+                {
+                  name: "Alevín",
+                  y: 30,
+                },
+                {
+                  name: "Infantil",
+                  y: 22,
+                },
+                {
+                  name: "Cadete",
+                  y: 18,
+                },
+                {
+                  name: "Feminas",
+                  y: 16,
+                }
+              ]
+            }
+          ],
+        });
+
+      </script>
+
+    <!-- FIN DE LA GRAFICA -->
+
+    <!-- AVISOS DE PROXIMOS ENTRENAMIENTOS -->
+    <div class="col-md-5 offset-md-1 lead my-5" id="proxEntrenos">
+      <h3 id="tib" class="text-light">Próximos Entrenamientos</h3>
+      <div style="margin-left: -120%; position: relative;">
+        <div id="proximosEntrenos" class="mb-3">
+          <input type="date" name="fechaEntreno" id="fechaEntreno" value="2020-06-07" disabled >
+          <input type="time" name="" id="" value="18:30" disabled>
+          <input type="text" name="" id="" value="Benjamín" disabled>
+        </div>
+        <div id="proximosEntrenos" class="mb-3">
+          <input type="date" name="fechaEntreno" id="fechaEntreno" value="2020-06-07" disabled >
+          <input type="time" name="" id="" value="20:00" disabled>
+          <input type="text" name="" id="" value="Cadete" disabled>
+        </div>
+      </div>
+    </div>
+    <!-- FIN AVISOS DE PROXIMOS ENTRENAMIENTOS -->
+
+
+    <!-- AVISOS DE PROXIMOS PARTIDOS -->
+    <div class="col-md-5 offset-md-6 lead my-5" id="proxPartidos">
+      <h3 id="tib" class="text-light">Próximos Partidos</h3>
+      <div style="left: 220%; position: relative;">
+        <div id="proximosEntrenos" class="mb-3">
+          <input type="date" name="fechaEntreno" id="fechaEntreno" value="2020-06-07" disabled >
+          <input type="time" name="" id="" value="18:30" disabled>
+          <input type="text" name="" id="" value="Benjamín" disabled>
+          <label for="rival">Rival: </label>
+          <input type="text" name="rival" id="">
+        </div>
+        <div id="proximosEntrenos" class="mb-3">
+          <input type="date" name="fechaEntreno" id="fechaEntreno" value="2020-06-07" disabled >
+          <input type="time" name="" id="" value="20:00" disabled>
+          <input type="text" name="" id="" value="Cadete" disabled>
+          <div class="row">
+            <label for="rival">Rival: </label>
+            <input type="text" name="rival" id="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIN AVISOS DE PROXIMOS PARTIDOS -->
+
+
+  <!-- FOOTER -->
+  <footer class="pt-4 border-top bg-dark text-center text-light">
+    <div class="row" style="width: 100%;">
+
+      <div class="col-6 col-sm ">
+        <h5>Asistencia</h5>
+        <ul class="list-unstyled text-small ">
+          <li><a class="text-muted" href="#">Ayuda y Servicio al Cliente</a></li>
+          <li><a class="text-muted" href="#">Aviso de Privacidad</a></li>
+          <li><a class="text-muted" href="#">Terminos de Uso</a></li>
+          <li><a class="text-muted" href="#">Comentarios sobre la Web</a></li>
+          <li><a class="text-muted" href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm ">
+        <h5>Patrocinadores</h5>
+        <ul class="list-unstyled text-small ml-3">
+          <li><a class="text-muted" href="https://www.adidas.es" target="_blank"><img src="../../imagenes/patrocinador1.png"  alt="" width="74" height="74"></a></li>
+          <li><a class="text-muted" href="https://www.nike.com" target="_blank"><img src="../../imagenes/patrocinador2.png" alt="" width="64" height="44"></a></li>
+          <li class="mt-1"><a class="text-muted" href="https://www.lucasfilm.com/" target="_blank"><img src="../../imagenes/patrocinador3.png" alt="" width="85" height="44"></a></li>
+          <li class="mt-2"><a class="text-muted" href="https://www.burgerking.es/" target="_blank"><img src="../../imagenes/patrocinador4.png" alt="" width="64" height="64"></a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm ">
+        <h5>Síguenos</h5>
+        <ul class="list-unstyled ml-3">
+          <li>
+            <a href="https://www.twitter.com" target="_blank" class="badge social twitter ">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank" class="badge social facebook ">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+          </li>
+          <li> 
+            <a href="https://www.instagram.com" target="_blank" class="badge social instagram ">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm mt-5 py-1 border-top text-center">
+      <a href="inicioLogueado.html"><img class="mb-2" src="../imagenes/gol-icon.png" alt="" width="64" height="64"></a>
+      <small class="d-block mb-3 text-muted">&copy; 2019-2020</small>
+    </div>
+
+  </footer>
+  <!-- FIN FOOTER -->
+
+  <script src="../../bootstrap/js/jquery-3.4.1.min.js"></script>
+  <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- EFECTOS CON JQUERY DE LA WEB -->
+
+  <script>
+
+    $('#proxEntrenos').ready(function(){
+      $("#proxEntrenos > div").animate({
+        marginLeft: '+=120%'
+      },3000);
+    });
+
+    $('#proxPartidos').ready(function(){
+      $("#proxPartidos > div").animate({
+        left: '-=220%'
+      },3000);
+    });
+
+  </script>
+
+</body>
+</html>

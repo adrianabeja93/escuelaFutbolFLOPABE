@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../CSS/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Entrenamientos</title>
+</head>
+<body style="background-color: black" >
+   <!-- COMIENZO DE LA CABECERA -->  
+   <header id="cabecera">
+    <!-- BARRA DE NAVEGACIÓN FIJA -->
+    
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgba(0, 0, 0, 0.26);" id="barra">
+      <a href="inicioLogueado.html"><img src="../../imagenes/gol-icon.png" alt="Tu escuela de fútbol más cerca" width="110" height="110"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="inicioLogueado.html">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="misjugadores.html">Mis jugadores</a>
+          </li>
+
+          
+            <div class="btn-group">
+              <a  class="nav-link active pr-0" href="entrenamientos.html">Entrenamientos</a>
+              <a  class="nav-link dropdown-toggle pl-0" id="entrenamientosDesplega" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                
+              </a>
+              <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.336);" aria-labelledby="entrenamientosDesplega">
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="horariosEntrenamiento.html">Horarios</a>
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="asistencia.html">Asistencia</a>
+              </div>
+            </div>
+         
+
+            <div class="btn-group">
+              <a  class="nav-link pr-0" href="partidos.html">Partidos</a>
+              <a  class="nav-link dropdown-toggle pl-0" id="partidosDesplega" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                
+              </a>
+              <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.336);" aria-labelledby="partidosDesplega">
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="horariosConvocatorias.html">Horarios y Convocatorias</a>
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href=resultados.html>Resultados</a>
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="clasificaciones.html">Clasificación</a>
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="#">Estadísticas</a>
+              </div>
+              </div>
+
+
+              <div class="btn-group">
+                <a  class="nav-link pr-0" href="#">Adrián López</a>
+                <a  class="nav-link dropdown-toggle pl-0" id="usuarioDesplega" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                  
+                </a>
+                <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.336);" aria-labelledby="usuarioDesplega">
+                    <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="#">Configuración</a>
+                    <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="index.html">Cerrar sesión</a>
+                </div>
+                </div>
+
+        </ul>
+      </div>
+    </nav>
+    <!-- FIN BARRA DE NAVEGACIÓN FIJA -->
+
+  </header>
+   <!-- FIN DE LA CABECERA --> 
+
+  <!-- ENTRENAMIENTOS -->
+
+  <section class="wrap" id="course-target" style="background-color: rgb(12, 34, 12);">
+    <!-- esta clase será usada en los estilos propios para separar las secciones -->
+    <div class="container-fluid p-5 text-light">
+
+
+      <!-- PROXIMAS SESIONES -->
+      <div class="header-section" >
+          <h3 class="header text-light">Próximas sesiones</h3>
+        </div>
+
+        <div id="proximasSesiones">
+
+            <table class="table table-hover table-striped table-dark col-10" style="text-align: center;">
+
+                <thead style="background-color:black;"> 
+                    <tr>
+                      <th scope="col">Día</th>
+                      <th scope="col">Hora inicio</th>
+                      <th scope="col">Hora finalización</th>
+                      <th scope="col">Categoría</th>
+                      <th scope="col">Grupo</th>
+                      <th scope="col">Alumno implicado</th>
+                      <th scope="col" style="width: 40%;">Descripción de la sesión</th>
+                    </tr>
+                  </thead>
+
+                <tbody>
+                    <tr>
+                      <td>28-03-2020</td>
+                      <td>18:00</td>
+                      <td>19:00</td>
+                      <td>Prebenjamín</td>
+                      <td>A</td>
+                      <td>Juan Luís Molina ALud</td>
+                      <td>Esta sesión consta de tres partes. Los alumnos trabajaran pases, controles y disparos a porteria en la primera parte.
+                        La segunda parte será para mejorar el aspecto físico donde se entrenará velocidad y resistencia.
+                        La tercera y última parte será un ejercicio de posicionamiento en el terreno de juego.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>28-03-2020</td>
+                      <td>19:00</td>
+                      <td>20:30</td>
+                      <td>Prebenjamín</td>
+                      <td>B</td>
+                      <td>Ernesto Molina ALud</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>29-03-2020</td>
+                      <td>18:00</td>
+                      <td>19:00</td>
+                      <td>Benjamín</td>
+                      <td>A</td>
+                      <td>Lucía Molina ALud</td>
+                      <td>
+                        Esta sesión consta de tres partes. Los alumnos trabajaran pases, controles y disparos a porteria en la primera parte.
+                        La segunda parte será para mejorar el aspecto físico donde se entrenará velocidad y resistencia.
+                        La tercera y última parte será un ejercicio de posicionamiento en el terreno de juego.
+                      </td>
+                    </tr>
+                  </tbody>
+            </table>
+
+        </div>
+
+        <!-------------------------------------->
+        <!---------- ASISTENCIA ---------------->
+        <!-------------------------------------->
+
+       
+
+        <div class="col-10 my-5" style="padding: 0em;" id="asistenciaSesion">
+
+          <h3 class="header text-light">Asistencia</h3>
+
+          <form class="form-inline">
+
+            <label for="jugadorAsistencia">Jugador</label>
+
+            <select name="jugadorAsistencia" class="custom-select my-5 mx-3">
+              <option selected>Lucía Molina Alud</option>
+              <option value="1">Ernesto Molina Alud</option>
+              <option value="2">Juan Luís Molina Alud</option>
+            </select>
+
+            <label class="ml-4" for="mesAsistencia">Mes</label>
+
+            <select name="mesAsistencia" class="custom-select my-5 mx-3">
+              <option selected>Enero</option>
+              <option value="1">Febrero</option>
+              <option value="2">Marzo</option>
+              <option value="3">Abril</option>
+              <option>Mayo</option>
+              <option value="1">Junio</option>
+              <option value="2">Julio</option>
+              <option value="3">Agosto</option>
+              <option>Septiembre</option>
+              <option value="1">Octubre</option>
+              <option value="2">Noviembre</option>
+              <option value="3">Diciembre</option>
+            </select>
+
+            <label class="ml-4"  for="Temporada">Temporada</label>
+
+            <select name="temporada" class="custom-select my-5 mx-3">
+              <option selected>2019/2020</option>
+              <option value="1">2018/2019</option>
+            </select>
+          </form>
+
+          <!-------------------TABLA DE ASISTENCIA------------------>
+                  <table class="table table-hover table-striped table-dark col-6" style="text-align: center;">
+      
+                      <thead style="background-color:black;"> 
+                          <tr>
+                            <th scope="col">Día</th>
+                            <th scope="col">Asiste</th>
+                            <th scope="col">Justificado</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+      
+                      <tbody>
+                          <tr>
+                            <td>12-03-2020</td>
+                            <td>Sí</td>
+                            <td>-</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                              <td>10-03-2020</td>
+                              <td>No</td>
+                              <td>No </td>
+                              <td><button type="submit" class="btn btn-primary">Justificar</button></td>
+                          </tr>
+                          <tr>
+                            <td>07-03-2020</td>
+                            <td>Sí</td>
+                            <td>-</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                          <td>05-03-2020</td>
+                          <td>No</td>
+                          <td>Sí</td>
+                          <td></td>
+                      </tr>
+                      <tr>
+                        <td>02-03-2020</td>
+                        <td>Sí</td>
+                        <td>- </td>
+                        <td></td>
+                    </tr>
+                        </tbody>
+                  </table>
+
+        </div>
+
+        </div> <!-- .container-fluid -->
+    </section> <!-- .wrap -->
+
+
+  <!-- FIN CUERPO TÉCNICO -->
+
+  <!-- FOOTER -->
+  <footer class="pt-4 border-top bg-dark text-center text-light">
+    <div class="row">
+
+      <div class="col-6 col-sm ">
+        <h5>Asistencia</h5>
+        <ul class="list-unstyled text-small ">
+          <li><a class="text-muted" href="#">Ayuda y Servicio al Cliente</a></li>
+          <li><a class="text-muted" href="#">Aviso de Privacidad</a></li>
+          <li><a class="text-muted" href="#">Terminos de Uso</a></li>
+          <li><a class="text-muted" href="#">Comentarios sobre la Web</a></li>
+          <li><a class="text-muted" href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm ">
+        <h5>Patrocinadores</h5>
+        <ul class="list-unstyled text-small ml-3">
+          <li><a class="text-muted" href="https://www.adidas.es" target="_blank"><img src="../../imagenes/patrocinador1.png"  alt="" width="74" height="74"></a></li>
+          <li><a class="text-muted" href="https://www.nike.com" target="_blank"><img src="../../imagenes/patrocinador2.png" alt="" width="64" height="44"></a></li>
+          <li class="mt-1"><a class="text-muted" href="https://www.lucasfilm.com/" target="_blank"><img src="../../imagenes/patrocinador3.png" alt="" width="85" height="44"></a></li>
+          <li class="mt-2"><a class="text-muted" href="https://www.burgerking.es/" target="_blank"><img src="../../imagenes/patrocinador4.png" alt="" width="64" height="64"></a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm ">
+        <h5>Síguenos</h5>
+        <ul class="list-unstyled ml-3">
+          <li>
+            <a href="https://www.twitter.com" target="_blank" class="badge social twitter ">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank" class="badge social facebook ">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+          </li>
+          <li> 
+            <a href="https://www.instagram.com" target="_blank" class="badge social instagram ">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm mt-5 py-1 border-top text-center">
+      <a href="inicioLogueado.html"><img class="mb-2" src="../imagenes/gol-icon.png" alt="" width="64" height="64"></a>
+      <small class="d-block mb-3 text-muted">&copy; 2019-2020</small>
+    </div>
+
+  </footer>
+  <!-- FIN FOOTER -->
+
+
+
+    <script src="../../bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

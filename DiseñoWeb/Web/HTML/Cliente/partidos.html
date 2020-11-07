@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../CSS/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Partidos</title>
+</head>
+<body style="background-color: black" >
+   <!-- COMIENZO DE LA CABECERA -->  
+   <header id="cabecera">
+    <!-- BARRA DE NAVEGACIÓN FIJA -->
+    
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgba(0, 0, 0, 0.26);" id="barra">
+      <a href="inicioLogueado.html"><img src="../../imagenes/gol-icon.png" alt="Tu escuela de fútbol más cerca" width="110" height="110"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="inicioLogueado.html">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="misjugadores.html">Mis jugadores</a>
+          </li>
+
+          
+            <div class="btn-group">
+              <a  class="nav-link pr-0" href="entrenamientos.html">Entrenamientos</a>
+              <a  class="nav-link dropdown-toggle pl-0" id="entrenamientosDesplega" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                
+              </a>
+              <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.336);" aria-labelledby="entrenamientosDesplega">
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="horariosEntrenamiento.html">Horarios</a>
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="asistencia.html">Asistencia</a>
+              </div>
+            </div>
+         
+
+            <div class="btn-group">
+              <a  class="nav-link pr-0 active" href="partidos.html">Partidos</a>
+              <a  class="nav-link dropdown-toggle pl-0" id="partidosDesplega" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                
+              </a>
+              <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.336);" aria-labelledby="partidosDesplega">
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="horariosConvocatorias.html">Horarios y Convocatorias</a>
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href=resultados.html>Resultados</a>
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="clasificaciones.html">Clasificación</a>
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="#">Estadísticas</a>
+              </div>
+              </div>
+
+
+              <div class="btn-group">
+                <a  class="nav-link pr-0" href="#">Adrián López</a>
+                <a  class="nav-link dropdown-toggle pl-0" id="usuarioDesplega" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                  
+                </a>
+                <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.336);" aria-labelledby="usuarioDesplega">
+                    <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="#">Configuración</a>
+                    <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="index.html">Cerrar sesión</a>
+                </div>
+                </div>
+
+        </ul>
+      </div>
+    </nav>
+    <!-- FIN BARRA DE NAVEGACIÓN FIJA -->
+
+  </header>
+   <!-- FIN DE LA CABECERA --> 
+
+  <!-- ENTRENAMIENTOS -->
+
+  <section class="wrap" id="course-target" style="background-color: rgb(12, 34, 12);">
+    <!-- esta clase será usada en los estilos propios para separar las secciones -->
+    <div class="container-fluid p-5 text-light">
+
+
+      <!-- PROXIMAS ENCUENTROS -->
+      <div class="header-section" >
+          <h3 class="header text-light">Próximos encuentros</h3>
+        </div>
+
+        <div id="proximosEncuentros">
+
+            <table class="table table-hover table-striped table-dark col-10" style="text-align: center;">
+
+                <thead style="background-color:black;"> 
+                    <tr>
+                      <th scope="col">Día</th>
+                      <th scope="col">Hora inicio</th>
+                      <th scope="col">Categoría</th>
+                      <th scope="col">Grupo</th>
+                      <th scope="col" style="width: 20%;">Encuentro</th>
+                      <th scope="col">Jornada</th>
+                      <th scope="col">Alumno(s) implicado(s)</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+
+                <tbody>
+                    <tr>
+                      <td>28-03-2020</td>
+                      <td>18:00</td>
+                      <td>Prebenjamín</td>
+                      <td>A</td>
+                      <td>Coria del Río - Footmin F.C.</td>
+                      <td>6ª</td>
+                      <td>Juan Luís Molina Alud
+                        <br>
+                        Ernesto Molina Alud
+                      </td>
+                      <td><button type="button" class="btn btn-primary">Ver lista de convocados</button></td>
+                    </tr>
+                    <tr>
+                      <td>28-03-2020</td>
+                      <td>19:00</td>
+                      <td>Benjamín</td>
+                      <td>B</td>
+                      <td>Footmin C.F. - San Juan de Aznalfarache</td>
+                      <td>Amistoso</td>
+                      <td>Ernesto Molina ALud</td>
+                      <td><button type="button" class="btn btn-primary">Ver lista de convocados</button></td>
+                    </tr>
+                    <tr>
+                      <td>29-03-2020</td>
+                      <td>18:00</td>
+                      <td>Cadete</td>
+                      <td>C</td>
+                      <td>Villarenpuho S.F. - Footmin C.F</td>
+                      <td>7ª</td>
+                      <td>Lucía Molina Alud</td>
+                      <td><button type="button" class="btn btn-primary">Ver lista de convocados</button></td>
+                    </tr>
+                  </tbody>
+            </table>
+
+        </div>
+
+        <!-------------------------------------->
+        <!---------- ULTIMOS ENCUENTROS ---------------->
+        <!-------------------------------------->
+
+        <div class="my-5" id="ultimosEncuentros">
+
+          <h3 class="header text-light">Últimos encuentros</h3>
+
+          <table class="table table-hover table-striped table-dark col-10" style="text-align: center;">
+
+              <thead style="background-color:black;"> 
+                  <tr>
+                    <th scope="col">Día</th>
+                    <th scope="col">Categoría</th>
+                    <th scope="col">Grupo</th>
+                    <th scope="col" style="width: 40%;">Encuentro</th>
+                    <th scope="col">Jornada</th>
+                    <th scope="col">Alumno(s) implicado(s)</th>
+                    <th></th>
+                  </tr>
+                </thead>
+
+              <tbody>
+                  <tr>
+                    <td>28-03-2020</td>
+                    <td>Prebenjamín</td>
+                    <td>A</td>
+                    <td>Coria del Río 1 - 4 Footmin F.C.</td>
+                    <td>6ª</td>
+                    <td>Juan Luís Molina Alud
+                      <br>
+                      Ernesto Molina Alud
+                    </td>
+                    <td><button type="button" class="btn btn-primary">Resumen del encuentro</button></td>
+                  </tr>
+                  <tr>
+                    <td>28-03-2020</td>
+                    <td>Benjamín</td>
+                    <td>B</td>
+                    <td>Footmin C.F. 5 - 8 San Juan de Aznalfarache</td>
+                    <td>Amistoso</td>
+                    <td>Ernesto Molina Alud</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#resumenPrebenjaminA">Resumen del encuentro</button></td>
+                  </tr>
+
+
+                   <!-- COMIENZO VENTANA MODAL PREBENJAMIN RESULTADO A -->
+
+                   <div class="modal fade" id="resumenPrebenjaminA" tabindex="-1" role="dialog" aria-labelledby="resumenPrebenjaminALabel" aria-hidden="true">
+                    <div class="modal-dialog " role="document">
+                      <div class="modal-content bg-dark text-light ">
+                        <div class="card bg-dark text-light">
+
+                            <div class="modal-header">
+                                <h2 class="text-light text-center p-3">Video Resumen</h2>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+
+                            
+
+                            <div class="embed-responsive embed-responsive-16by9 ">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SAlKGSvTq0Q" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="card-body row">
+                                <div class="col-6">
+                                    <p class="card-text lead"> Lugareños CF 4  </p>
+                                    <p class="card-text"> <i class="far fa-futbol"></i> 1-0 Mikel Arteta  </p>
+                                    <p class="card-text"> <i class="fas fa-futbol"></i> 2-0 Colon Azteca  </p>
+                                    <p class="card-text"> <i class="fas fa-futbol"></i> 3-3 Lucía Pérez  </p>
+                                    <p class="card-text"> <i class="fas fa-futbol"></i> 4-3 Lucía Pérez </p>
+                                    <p class="card-text"> <i class="fas fa-square" style="background-color:yellow; color: yellow;"></i> Eduardo Finidi </p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="card-text lead"> CDF Minfoot (A) 3  </p>
+                                    <p class="card-text"> <i class="fas fa-futbol"></i> 2-1 Adrián Correa  </p>
+                                    <p class="card-text"> <i class="fas fa-futbol"></i> 2-2 Cristian Navarro  </p>
+                                    <p class="card-text"> <i class="fas fa-futbol"></i> 2-3 David Broncano  </p>
+                                    <p class="card-text"> <i class="fas fa-square" style="background-color: red; color: red;"></i> David Broncano  </p>
+                                    <p class="card-text"> <i class="fas fa-square" style="background-color:yellow; color:yellow;"></i> Adrián Correa  </p>
+                                </div>
+
+                                <!-- COMENTARIOS DEL PARTIDO -->
+                                <div id="comentarios">
+                                    <div class="mt-5 py-5 col-12 ">
+                                        <div class="form-group ">
+                                                <h2>Comentarios:</h2>
+                                                <textarea class="form-control " rows="4" placeholder="Escribe aquí tu comentario..."></textarea>
+                                                <button type="button" class="btn btn-danger float-right mt-1 ">Publicar</button>
+                                        </div>
+                                
+                                        <div class="media border p-3 mt-5" >
+                                
+                                            <img src="imagenes/user.png" alt="Dac Guhuti" class="mr-3 mt-3 rounded-circle" style="width: 60px;" > 
+                                            <div class="media-body">
+                                                <h4>Sergio Hornillo <small><i>Publicado el 1 Febrero de 2019</i></small></h4>
+                                                <p>Gran partido de los prebenjamines. Una pena no haber conseguido la victoria.</p>
+                                                <button class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#collapseForm" aria-expanded="false" aria-controls="collapseForm">Responder</button>
+                                                <!-- FORM ANSWER -->
+                                
+                                                <form action="" class="collapse" id="collapseForm">
+                                
+                                                    <textarea class="form-control my-2" rows="3" placeholder="Escribe aquí tu comentario..."></textarea>
+                                                    <p id="btn-form-answer">
+                                                        <button class="btn btn-danger btn-xs">Enviar</button>
+                                                    </p>
+                                
+                                                </form>
+                                
+                                                <!-- END FORM ANSWER -->
+                                                
+                                                <div class="media p-3">
+                                                    <img src="imagenes/user.png" alt="John Williams" class="mr-3 mt-3 rounded-circle" style="width: 45px;">
+                                                    <div class="media-body">
+                                                        <h4>Rocío Acuña <small><i>Hace dos horas</i></small></h4>
+                                                        <p>¡Los mejores sin duda! Para la próxima seguro que ganamos. ¡Vamos Minfoot!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- SECCION DE COMENTARIOS DEL PARTIDO -->
+                              
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- FIN VENTANA MODAL PREBENJAMIN RESULTADO A -->
+
+
+                </tbody>
+          </table>
+
+      </div>
+
+
+        <!-------------------------------------->
+        <!---------- BUSCAR ENCUENTROS ---------------->
+        <!-------------------------------------->
+
+      <div class="col-10 my-5" style="padding: 0em;" id="bucarEncuentro">
+
+        <h3 class="header text-light">Buscar encuentro</h3>
+
+        <form class="form-inline">
+
+          <label for="temporadaBuscar">Temporada</label>
+
+          <select name="temporadaBuscar" class="custom-select my-5 mx-3">
+            <option selected>2019/2020</option>
+            <option value="1">2018/2019</option>
+          </select>
+
+          <label class="ml-4" for="jornadaBuscar">Jornada</label>
+
+          <select name="jornadaBuscar" class="custom-select my-5 mx-3">
+            <option selected>1</option>
+            <option value="1">2</option>
+            <option value="2">3</option>
+            <option value="3">4</option>
+            <option>5</option>
+            <option value="1">6</option>
+            <option value="2">7</option>
+            <option value="3">8</option>
+            <option>9</option>
+            <option value="1">10</option>
+            <option value="2">11</option>
+            <option value="3">12</option>
+          </select>
+
+          <label class="ml-4"  for="categoriaBuscar">Categoría</label>
+
+          <select name="categoriaBuscar" class="custom-select my-5 mx-3">
+            <option selected>Bebe</option>
+            <option value="1">Prebenjamín</option>
+            <option value="1">Benjamín</option>
+            <option value="1">Alevín</option>
+            <option value="1">Cadete</option>
+          </select>
+        </form>
+      </div>
+
+        </div> <!-- .container-fluid -->
+    </section> <!-- .wrap -->
+
+
+  <!-- FIN CUERPO TÉCNICO -->
+
+  <!-- FOOTER -->
+  <footer class="pt-4 border-top bg-dark text-center text-light">
+    <div class="row">
+
+      <div class="col-6 col-sm ">
+        <h5>Asistencia</h5>
+        <ul class="list-unstyled text-small ">
+          <li><a class="text-muted" href="#">Ayuda y Servicio al Cliente</a></li>
+          <li><a class="text-muted" href="#">Aviso de Privacidad</a></li>
+          <li><a class="text-muted" href="#">Terminos de Uso</a></li>
+          <li><a class="text-muted" href="#">Comentarios sobre la Web</a></li>
+          <li><a class="text-muted" href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm ">
+        <h5>Patrocinadores</h5>
+        <ul class="list-unstyled text-small ml-3">
+          <li><a class="text-muted" href="https://www.adidas.es" target="_blank"><img src="../../imagenes/patrocinador1.png"  alt="" width="74" height="74"></a></li>
+          <li><a class="text-muted" href="https://www.nike.com" target="_blank"><img src="../../imagenes/patrocinador2.png" alt="" width="64" height="44"></a></li>
+          <li class="mt-1"><a class="text-muted" href="https://www.lucasfilm.com/" target="_blank"><img src="../../imagenes/patrocinador3.png" alt="" width="85" height="44"></a></li>
+          <li class="mt-2"><a class="text-muted" href="https://www.burgerking.es/" target="_blank"><img src="../../imagenes/patrocinador4.png" alt="" width="64" height="64"></a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm ">
+        <h5>Síguenos</h5>
+        <ul class="list-unstyled ml-3">
+          <li>
+            <a href="https://www.twitter.com" target="_blank" class="badge social twitter ">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank" class="badge social facebook ">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+          </li>
+          <li> 
+            <a href="https://www.instagram.com" target="_blank" class="badge social instagram ">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm mt-5 py-1 border-top text-center">
+      <a href="inicioLogueado.html"><img class="mb-2" src="../imagenes/gol-icon.png" alt="" width="64" height="64"></a>
+      <small class="d-block mb-3 text-muted">&copy; 2019-2020</small>
+    </div>
+
+  </footer>
+  <!-- FIN FOOTER -->
+
+
+    <script src="../../bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

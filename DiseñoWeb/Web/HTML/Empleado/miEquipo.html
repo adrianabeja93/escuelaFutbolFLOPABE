@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../CSS/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Mi equipo</title>
+</head>
+<body style="background-color: black" >
+   <!-- COMIENZO DE LA CABECERA -->  
+   <header id="cabecera">
+    <!-- BARRA DE NAVEGACIÓN FIJA -->
+    
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgba(0, 0, 0, 0.26);" id="barra">
+      <a href="inicioLogueado.html"><img src="../../imagenes/gol-icon.png" alt="Tu escuela de fútbol más cerca" width="110" height="110"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="inicioLogueado.html">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="misjugadores.html">Mi equipo</a>
+          </li>
+
+          
+            <div class="btn-group">
+              <a  class="nav-link pr-0" href="entrenamientos.html">Entrenamientos</a>
+              <a  class="nav-link dropdown-toggle pl-0" id="entrenamientosDesplega" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                
+              </a>
+              <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.336);" aria-labelledby="entrenamientosDesplega">
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="horariosEntrenamiento.html">Horarios</a>
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="asistencia.html">Asistencia</a>
+              </div>
+            </div>
+         
+
+            <div class="btn-group">
+              <a  class="nav-link pr-0" href="partidos.html">Partidos</a>
+              <a  class="nav-link dropdown-toggle pl-0" id="partidosDesplega" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                
+              </a>
+              <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.336);" aria-labelledby="partidosDesplega">
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="horariosConvocatorias.html">Horarios y Convocatorias</a>
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href=resultados.html>Resultados</a>
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="clasificaciones.html">Clasificación</a>
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="#">Estadísticas</a>
+              </div>
+              </div>
+
+
+              <div class="btn-group">
+                <a  class="nav-link pr-0" href="#">Adrián López</a>
+                <a  class="nav-link dropdown-toggle pl-0" id="usuarioDesplega" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                  
+                </a>
+                <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.336);" aria-labelledby="usuarioDesplega">
+                    <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="#">Configuración</a>
+                    <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="index.html">Cerrar sesión</a>
+                </div>
+                </div>
+
+        </ul>
+      </div>
+    </nav>
+    <!-- FIN BARRA DE NAVEGACIÓN FIJA -->
+
+  </header>
+   <!-- FIN DE LA CABECERA --> 
+
+  <!-- MI EQUIPO -->
+
+  <section class="wrap" id="course-target" style="background-color: rgb(12, 34, 12);">
+    <!-- esta clase será usada en los estilos propios para separar las secciones -->
+    <div class="container-fluid p-5 text-light">
+        <div class="header-section" >
+          <h1 id="ct" >Benjamín A</h1>
+          <h3 class="header text-light mb-5">Temporada 2019/2020</h3>
+        </div>
+
+        <div id="jugadores">
+
+            <table class="table table-hover table-striped table-dark col-10" style="text-align: center;">
+
+                <thead style="background-color:black;"> 
+                    <tr>
+                      <th></th>
+                      <th scope="col">Jugador</th>
+                      <th scope="col">Partidos disputados</th>
+                      <th scope="col">Entrenos disputados</th>
+                      <th scope="col">Goles</th>
+                      <th scope="col">Expulsiones</th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+
+                <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Juan Luís Molina Alud</td>
+                      <td>15</td>
+                      <td>34</td>
+                      <td>20</td>
+                      <td>0</td>
+                      <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#datosPersonales">Datos personales</button></td>
+                      <td><button type="button" class="btn btn-primary">Contactar con tutor</button></td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Natalia Berenguer Copera</td>
+                      <td>5</td>
+                      <td>14</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td><button type="button" class="btn btn-primary">Datos personales</button></td>
+                      <td><button type="button" class="btn btn-primary">Contactar con tutor</button></td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Luís Molina Yañez</td>
+                      <td>11</td>
+                      <td>31</td>
+                      <td>3</td>
+                      <td>1</td>
+                      <td><button type="button" class="btn btn-primary">Datos personales</button></td>
+                      <td><button type="button" class="btn btn-primary">Contactar con tutor</button></td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Antonio Cruz Vargas</td>
+                      <td>15</td>
+                      <td>29</td>
+                      <td>21</td>
+                      <td>2</td>
+                      <td><button type="button" class="btn btn-primary">Datos personales</button></td>
+                      <td><button type="button" class="btn btn-primary">Contactar con tutor</button></td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Ivan Vallejo Cruz</td>
+                      <td>9</td>
+                      <td>22</td>
+                      <td>2</td>
+                      <td>0</td>
+                      <td><button type="button" class="btn btn-primary">Datos personales</button></td>
+                      <td><button type="button" class="btn btn-primary">Contactar con tutor</button></td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>German Rulli Orellana</td>
+                      <td>15</td>
+                      <td>34</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td><button type="button" class="btn btn-primary">Datos personales</button></td>
+                      <td><button type="button" class="btn btn-primary">Contactar con tutor</button></td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">7</th>
+                      <td>Alicia Hoyo Alma</td>
+                      <td>13</td>
+                      <td>19</td>
+                      <td>8</td>
+                      <td>1</td>
+                      <td><button type="button" class="btn btn-primary">Datos personales</button></td>
+                      <td><button type="button" class="btn btn-primary">Contactar con tutor</button></td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">8</th>
+                      <td>Juan Jimenez Aguza</td>
+                      <td>15</td>
+                      <td>34</td>
+                      <td>10</td>
+                      <td>0</td>
+                      <td><button type="button" class="btn btn-primary">Datos personales</button></td>
+                      <td><button type="button" class="btn btn-primary">Contactar con tutor</button></td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">9</th>
+                      <td>Javier Rios Del Olmo</td>
+                      <td>15</td>
+                      <td>34</td>
+                      <td>17</td>
+                      <td>0</td>
+                      <td><button type="button" class="btn btn-primary">Datos personales</button></td>
+                      <td><button type="button" class="btn btn-primary">Contactar con tutor</button></td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">10</th>
+                      <td>Sandra Corrella Bartomeu</td>
+                      <td>14</td>
+                      <td>30</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td><button type="button" class="btn btn-primary">Datos personales</button></td>
+                      <td><button type="button" class="btn btn-primary">Contactar con tutor</button></td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">11</th>
+                      <td>Daniel Baena Barea</td>
+                      <td>15</td>
+                      <td>34</td>
+                      <td>0</td>
+                      <td>3</td>
+                      <td><button type="button" class="btn btn-primary">Datos personales</button></td>
+                      <td><button type="button" class="btn btn-primary">Contactar con tutor</button></td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">12</th>
+                      <td>Carlos Espina Acedia</td>
+                      <td>9</td>
+                      <td>24</td>
+                      <td>2</td>
+                      <td>0</td>
+                      <td><button type="button" class="btn btn-primary">Datos personales</button></td>
+                      <td><button type="button" class="btn btn-primary">Contactar con tutor</button></td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">13</th>
+                      <td>Juan Vazquez Otamendi</td>
+                      <td>15</td>
+                      <td>34</td>
+                      <td>4</td>
+                      <td>0</td>
+                      <td><button type="button" class="btn btn-primary">Datos personales</button></td>
+                      <td><button type="button" class="btn btn-primary">Contactar con tutor</button></td>
+                    </tr>
+
+                  </tbody>
+            </table>
+
+        </div>
+
+        <!-------------------------------------->
+        <!-- DATOS PERSONALES DEL JUGADOR -->
+        <!-------------------------------------->
+
+        <div class="modal fade" id="datosPersonales" tabindex="-1" role="dialog" aria-labelledby="datosPersonalesLabel" aria-hidden="true">
+
+          <div class="modal-dialog" role="document">
+            <div class="modal-content bg-dark text-light ">
+              <div class="card bg-dark text-light p-5">
+
+
+          <form class="form-horizontal" method="post" action="#">
+
+                <div class="form-group">
+                    <span class="col-md-1 col-md-offset-2 text-center">Nombre</span>
+                    <div class="col-md-12">
+                        <input id="nombre" name="nombre" type="text" value="Juan Luís" class="form-control" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <span class="col-md-1 col-md-offset-2 text-center ">Apellidos</span>
+                    <div class="col-md-12">
+                        <input id="apellido" name="apellido" type="text" value="Molina Alud" class="form-control" readonly>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <span class="col-md-1 col-md-offset-2 text-center">DNI</span>
+                    <div class="col-md-12">
+                        <input id="dni" name="dni" type="text" value="538212342L" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <span class="col-md-1 col-md-offset-2 text-center">Fecha de nacimiento</span>
+                    <div class="col-md-12">
+                        <input id="nacimiento" name="nacimiento" type="date" value="2005-10-09" class="form-control">
+                    </div>
+                </div>
+    
+          </form>
+
+          </div>
+
+          </div>
+          </div>
+        </div>
+
+        </div> <!-- .container-fluid -->
+    </section> <!-- .wrap -->
+
+
+  <!-- FIN CUERPO TÉCNICO -->
+
+  <!-- FOOTER -->
+  <footer class="pt-4 border-top bg-dark text-center text-light">
+    <div class="row">
+
+      <div class="col-6 col-sm ">
+        <h5>Asistencia</h5>
+        <ul class="list-unstyled text-small ">
+          <li><a class="text-muted" href="#">Ayuda y Servicio al Cliente</a></li>
+          <li><a class="text-muted" href="#">Aviso de Privacidad</a></li>
+          <li><a class="text-muted" href="#">Terminos de Uso</a></li>
+          <li><a class="text-muted" href="#">Comentarios sobre la Web</a></li>
+          <li><a class="text-muted" href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm ">
+        <h5>Patrocinadores</h5>
+        <ul class="list-unstyled text-small ml-3">
+          <li><a class="text-muted" href="https://www.adidas.es" target="_blank"><img src="../../imagenes/patrocinador1.png"  alt="" width="74" height="74"></a></li>
+          <li><a class="text-muted" href="https://www.nike.com" target="_blank"><img src="../../imagenes/patrocinador2.png" alt="" width="64" height="44"></a></li>
+          <li class="mt-1"><a class="text-muted" href="https://www.lucasfilm.com/" target="_blank"><img src="../../imagenes/patrocinador3.png" alt="" width="85" height="44"></a></li>
+          <li class="mt-2"><a class="text-muted" href="https://www.burgerking.es/" target="_blank"><img src="../../imagenes/patrocinador4.png" alt="" width="64" height="64"></a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm ">
+        <h5>Síguenos</h5>
+        <ul class="list-unstyled ml-3">
+          <li>
+            <a href="https://www.twitter.com" target="_blank" class="badge social twitter ">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank" class="badge social facebook ">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+          </li>
+          <li> 
+            <a href="https://www.instagram.com" target="_blank" class="badge social instagram ">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm mt-5 py-1 border-top text-center">
+      <a href="inicioLogueado.html"><img class="mb-2" src="../imagenes/gol-icon.png" alt="" width="64" height="64"></a>
+      <small class="d-block mb-3 text-muted">&copy; 2019-2020</small>
+    </div>
+
+  </footer>
+  <!-- FIN FOOTER -->
+
+
+    <script src="../../bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
