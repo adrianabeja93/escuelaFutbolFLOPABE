@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../CSS/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Configuración</title>
+</head>
+<body style="background-color: black" >
+   <!-- COMIENZO DE LA CABECERA -->  
+   <header id="cabecera">
+    <!-- BARRA DE NAVEGACIÓN FIJA -->
+    
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgba(0, 0, 0, 0.26);" id="barra">
+      <a href="inicioLogueado.html"><img src="../../imagenes/gol-icon.png" alt="Tu escuela de fútbol más cerca" width="110" height="110"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="inicioLogueado.html">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="misjugadores.html">Empleados</a>
+          </li>
+
+          
+            <div class="btn-group">
+              <a  class="nav-link pr-0" href="entrenamientos.html">Equipos</a>
+              <a  class="nav-link dropdown-toggle pl-0" id="entrenamientosDesplega" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                
+              </a>
+              <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.336);" aria-labelledby="entrenamientosDesplega">
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="horariosEntrenamiento.html">Horarios</a>
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="asistencia.html">Asistencia</a>
+              </div>
+            </div>
+         
+
+            <div class="btn-group">
+              <a  class="nav-link pr-0" href="partidos.html">Partidos</a>
+              <a  class="nav-link dropdown-toggle pl-0" id="partidosDesplega" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                
+              </a>
+              <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.336);" aria-labelledby="partidosDesplega">
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="horariosConvocatorias.html">Horarios y Convocatorias</a>
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href=resultados.html>Resultados</a>
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="clasificaciones.html">Clasificación</a>
+                <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="#">Estadísticas</a>
+              </div>
+              </div>
+
+
+              <div class="btn-group">
+                <a  class="nav-link pr-0 active" href="#">Adrián López</a>
+                <a  class="nav-link dropdown-toggle pl-0" id="usuarioDesplega" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                  
+                </a>
+                <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.336);" aria-labelledby="usuarioDesplega">
+                    <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="#">Configuración</a>
+                    <a class="dropdown-item text-light" style="background-color: rgba(0, 0, 0, 0.336);" href="index.html">Cerrar sesión</a>
+                </div>
+                </div>
+
+        </ul>
+      </div>
+    </nav>
+    <!-- FIN BARRA DE NAVEGACIÓN FIJA -->
+
+  </header>
+   <!-- FIN DE LA CABECERA --> 
+
+  <!-- DATOS PERSONALES -->
+
+  <section class="wrap" id="course-target" style="background-color: rgb(12, 34, 12);">
+    <!-- esta clase será usada en los estilos propios para separar las secciones -->
+    <div class="container-fluid p-5 text-light">
+        <div class="header-section col-sm-6 offset-sm-3 mb-3" style="border-bottom: 2px slategray solid;" >
+                <h2 id="ct" >Configuración</h2>
+        </div>
+
+        <div id="datosPersonales" class="col-sm-6 offset-sm-3" style="border-bottom: 2px slategray solid;">
+
+          <div class="col-sm-2 pl-0">
+            <p class="lead">Datos personales</p>
+          </div>
+
+          <div class="col-sm-9 offset-3 row my-3 d-flex justify-content-between">
+              <input type="text" name="nombre" value="Francisco Adrián" readonly>
+              <button type="button" class="btn btn-primary">Modificar nombre</button>
+          </div>
+
+          <div class="col-sm-9 offset-3 row mb-3  d-flex justify-content-between">
+            <input type="text" name="apellidos" value="López Abeja" readonly>
+            <button type="button" class="btn btn-primary">Modificar apellidos</button>
+          </div>
+
+          <div class="col-sm-9 offset-3 row mb-3 d-flex justify-content-between">
+              <input type="text" name="dni" value="53771974K" readonly>
+              <button type="button" class="btn btn-primary">Modificar DNI</button>
+          </div>
+
+          <div class="col-sm-9 offset-3 row mb-3 d-flex justify-content-between">
+            <input type="tel" name="telefono" value="654885013" readonly>
+            <button type="button" class="btn btn-primary">Modificar teléfono</button>
+          </div>
+
+        </div>
+
+        <div id="datosPersonales2" class="col-sm-6 offset-sm-3" style="border-bottom: 2px slategray solid;">
+
+          <div class="col-sm-9 offset-3 row my-3 d-flex justify-content-between">
+              <input type="password" name="pass" value="caca" readonly>
+              <button type="button" class="btn btn-primary">Modificar contraseña</button>
+          </div>
+
+          <div class="col-sm-9 offset-3 row mb-3  d-flex justify-content-between">
+            <input type="email" name="email" value="presidenteclub@gmail.com" readonly>
+            <button type="button" class="btn btn-primary">Modificar email</button>
+          </div>
+
+          <div class="col-sm-9 offset-3 row mb-3  d-flex justify-content-between">
+            <input type="text" name="text" value="TAFAD" readonly>
+            <button type="button" class="btn btn-primary">Modificar formación</button>
+          </div>
+
+        </div>
+
+        <!-------------------------------------->
+        <!-- DATOS DEL CLUB -->
+        <!-------------------------------------->
+
+        <div id="datosClub" class="col-sm-6 offset-sm-3" style="border-bottom: 2px slategray solid;">
+
+          <div class="col-sm-2 pl-0 mt-3">
+            <p class="lead">Datos del club</p>
+          </div>
+
+          <div class="col-sm-9 offset-3 row my-3 d-flex justify-content-between">
+              <input type="text" name="nombreClub" value="Footmin F.C." readonly>
+              <button type="button" class="btn btn-primary">Modificar nombre club</button>
+          </div>
+
+          <div class="col-sm-9 offset-3 row mb-3  d-flex justify-content-between">
+            <input type="date" name="fundacion" value="2000-01-02" readonly>
+            <button type="button" class="btn btn-primary">Modificar año de fundación</button>
+          </div>
+
+          <div class="col-sm-9 offset-3 row mb-3 d-flex justify-content-between">
+              <input type="tel" name="telefonoClub" value="954171018" readonly>
+              <button type="button" class="btn btn-primary">Modificar teléfono de club</button>
+          </div>
+
+          <div class="col-sm-9 offset-3 row mb-3 d-flex justify-content-between">
+            <input type="email" name="emailClub" value="footmin@hotmail.com" readonly>
+            <button type="button" class="btn btn-primary">Modificar email de club</button>
+          </div>
+
+        </div>
+
+        <div id="datosClub2" class="col-sm-6 offset-sm-3" style="border-bottom: 2px slategray solid;">
+
+          <div class="col-sm-9 offset-3 row my-3 d-flex justify-content-between">
+              <input type="text" name="direccionClub" value="C/ Falsa nº 123" readonly>
+              <button type="button" class="btn btn-primary">Modificar dirección</button>
+          </div>
+
+          <div class="col-sm-9 offset-3 row mb-3  d-flex justify-content-between">
+            <input type="text" name="estadio" value="Alfonse Del Pasillo" readonly>
+            <button type="button" class="btn btn-primary">Modificar estadio</button>
+          </div>
+
+        </div>
+
+        </div> <!-- .container-fluid -->
+    </section> <!-- .wrap -->
+
+
+  <!-- FOOTER -->
+  <footer class="pt-4 border-top bg-dark text-center text-light">
+    <div class="row" style="width: 100%;">
+
+      <div class="col-6 col-sm ">
+        <h5>Asistencia</h5>
+        <ul class="list-unstyled text-small ">
+          <li><a class="text-muted" href="#">Ayuda y Servicio al Cliente</a></li>
+          <li><a class="text-muted" href="#">Aviso de Privacidad</a></li>
+          <li><a class="text-muted" href="#">Terminos de Uso</a></li>
+          <li><a class="text-muted" href="#">Comentarios sobre la Web</a></li>
+          <li><a class="text-muted" href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm ">
+        <h5>Patrocinadores</h5>
+        <ul class="list-unstyled text-small ml-3">
+          <li><a class="text-muted" href="https://www.adidas.es" target="_blank"><img src="../../imagenes/patrocinador1.png"  alt="" width="74" height="74"></a></li>
+          <li><a class="text-muted" href="https://www.nike.com" target="_blank"><img src="../../imagenes/patrocinador2.png" alt="" width="64" height="44"></a></li>
+          <li class="mt-1"><a class="text-muted" href="https://www.lucasfilm.com/" target="_blank"><img src="../../imagenes/patrocinador3.png" alt="" width="85" height="44"></a></li>
+          <li class="mt-2"><a class="text-muted" href="https://www.burgerking.es/" target="_blank"><img src="../../imagenes/patrocinador4.png" alt="" width="64" height="64"></a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm ">
+        <h5>Síguenos</h5>
+        <ul class="list-unstyled ml-3">
+          <li>
+            <a href="https://www.twitter.com" target="_blank" class="badge social twitter ">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank" class="badge social facebook ">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+          </li>
+          <li> 
+            <a href="https://www.instagram.com" target="_blank" class="badge social instagram ">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm mt-5 py-1 border-top text-center">
+      <a href="inicioLogueado.html"><img class="mb-2" src="../imagenes/gol-icon.png" alt="" width="64" height="64"></a>
+      <small class="d-block mb-3 text-muted">&copy; 2019-2020</small>
+    </div>
+
+  </footer>
+  <!-- FIN FOOTER -->
+
+  <script>
+    function ocultarMostrar() {
+      var x = document.getElementById("inscribirEmpleado");
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+  }
+ 
+    function quitarReadOnly(id)
+    {
+        // Eliminamos el atributo de solo lectura
+        $("."+id).removeAttr("readonly");
+        // Añadiremos el boton para guardar los cambios
+        var button = '<button type="button" class="btn btn-sm btn-block text-light" style="background-color: rgb(12, 34, 12);">Guardar</button>';
+        $("#botones").append(button);
+    }
+  </script>
+
+
+    <script src="../../bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
